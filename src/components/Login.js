@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Login() {
+const Login = () => {
   const [state, setState] = useState({
     username: "",
     email: "",
@@ -80,4 +80,5 @@ export default function Login() {
       </form>
     </React.Fragment>
   );
-}
+};
+export default Login;

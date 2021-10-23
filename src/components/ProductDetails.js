@@ -1,10 +1,7 @@
 import React from "react";
 
-const ProductDetails = (props) => {
-  console.log(props);
-  const product = props.products.filter(
-    (p) => p.id === parseInt(props.match.params.id)
-  )[0];
+const ProductDetails = ({ products, match }) => {
+  const product = products.filter((p) => p.id === parseInt(match.params.id))[0];
   return (
     <React.Fragment>
       <h3>Product Id {product.id}</h3>
